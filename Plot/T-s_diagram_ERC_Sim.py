@@ -53,15 +53,6 @@ T_satliquid_14_1 = PropsSI('T', 'P', read_data[0,1]*1000, 'Q', 0, fluid1)
 T_satliquid_14_2 = PropsSI('T', 'P', read_data[0,1]*1000, 'Q', 0, fluid2)
 T_satliquid_14_mix = (fraction1 * T_satliquid_14_1 + fraction2 * T_satliquid_14_2)
 
-#state 15a
-s_15a_1 = PropsSI('S', 'H', 582.708*1000, 'P', read_data[2,1]*1000, fluid1)
-s_15a_2 = PropsSI('S', 'H', 582.708*1000, 'P', read_data[2,1]*1000, fluid2)
-s_15a_mix = (fraction1 * s_15a_1 + fraction2 * s_15a_2)/1000
-
-T_15a_1 = PropsSI('T', 'H', 582.708*1000, 'P', read_data[2,1]*1000, fluid1)
-T_15a_2 = PropsSI('T', 'H', 582.708*1000, 'P', read_data[2,1]*1000, fluid2)
-T_15a_mix = (fraction1 * T_15a_1 + fraction2 * T_15a_2)
-
 #state 16(sat_vapor)
 s_satvapor_16_1 = PropsSI('S', 'P', read_data[3,1]*1000, 'Q', 1, fluid1)
 s_satvapor_16_2 = PropsSI('S', 'P', read_data[3,1]*1000, 'Q', 1, fluid2)
